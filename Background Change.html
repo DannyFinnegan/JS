@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" lang="en">
+<head>
+    <style>
+        p
+        {
+            border-style: solid;
+            border-color: aquamarine;
+            border-width: 2px;
+        }
+    </style>
+    <script>
+
+    function changeColour(swap)
+    {
+        swap.style.backgroundColor="blue";
+        swap.style.color="White";
+    }
+</script>
+    <title>Background change</title>
+</head>
+<body>
+<p onclick = changeColour(this)>This is a test. This is a test.</p>
+
+<button onclick = location.reload();>Reset</button>
+</body>
+</html>
