@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Open Swap</title>
+    <script>
+        function CheckboxTick()
+        {
+            if (document.getElementById('tick').checked==true)
+            {
+               window.open("https://www.google.com/");
+            }
+            else
+            {
+                window.open("https://www.google.com/","_self")
+            }
+        }
+        function CheckboxTick2()
+        {
+            if (document.getElementById('tick').checked==true)
+            {
+                window.open("https://www.youtube.com/");
+            }
+            else
+            {
+                window.open("https://www.youtube.com/","_self")
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="checkbox" id="tick"> Use this to open page in separate tab
+<br><br>
+<a onclick="CheckboxTick(this)"> Google </a><br>
+<a onclick="CheckboxTick2(this)">Youtube</a>
+</body>
+</html>
